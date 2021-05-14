@@ -11,8 +11,9 @@ namespace DataAccessLayer.Abstract
     {
         List<T> List();
         void Insert(T p);
+        T Get(Expression<Func<T, bool>> filter); //Sadece id si 5 olanı getiren
         void Delete(T p);
         void Update(T p);
-        List<T> List(Expression<Func<T, bool>> filter);
+        List<T> List(Expression<Func<T, bool>> filter); //İsmi Ali Olanları Getiren
     }
 }
