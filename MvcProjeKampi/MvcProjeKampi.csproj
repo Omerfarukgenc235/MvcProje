@@ -2573,6 +2573,7 @@
     <Content Include="web\js\jquery-1.11.1.min.js" />
     <Content Include="web\js\jquery.circlechart.js" />
     <Content Include="web\w3layouts-License.txt" />
+    <Content Include="Yetenek kartım.png" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
