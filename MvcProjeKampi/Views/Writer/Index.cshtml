@@ -30,7 +30,7 @@
                         <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch">
                             <div class="card bg-light">
                                 <div class="card-header text-muted border-bottom-0">
-                                    Digital Strategist
+                                    @x.WriterTitle
                                 </div>
                                 <div class="card-body pt-0">
                                     <div class="row">
@@ -42,7 +42,7 @@
                                             </ul>
                                         </div>
                                         <div class="col-5 text-center">
-                                            <img src="~/AdminLTE-3.0.4/dist/img/user1-128x128.jpg" alt="" class="img-circle img-fluid">
+                                            <img src="@x.WriterImage" alt="" class="img-circle img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -51,7 +51,7 @@
                                         <a href="#" class="btn btn-sm bg-teal">
                                             <i class="fas fa-user">Yazarın başlıkları</i>
                                         </a>
-                                        <a href="#" class="btn btn-sm btn-primary">
+                                        <a href="/Writer/EditWriter/@x.WriterID" class="btn btn-sm btn-primary">
                                             <i class="fas fa-user"></i> Profili Düzenle
                                         </a>
                                     </div>

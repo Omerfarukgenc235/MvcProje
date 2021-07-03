@@ -17,5 +17,15 @@ namespace MvcProjeKampi.Controllers
         {
             return View();
         }
+
+        public ActionResult SweetAlert()
+        {
+            return View();
+        }
+        [AllowAnonymous]
+        public ActionResult Kendim()
+        {
+            return View();
+        }
     }
 }
