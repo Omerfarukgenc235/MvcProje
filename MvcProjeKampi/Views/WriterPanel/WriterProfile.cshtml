@@ -21,9 +21,8 @@
     @Html.Label("Yazar Mail")
     @Html.TextBoxFor(x => x.WriterMail, new { @class = "form-control" })
     <br />
-    @Html.Label("Yazar Şifresi")
-    @Html.TextBoxFor(x => x.WriterPassword, new { @class = "form-control" })
-    <br />
+    @Html.HiddenFor(x => x.WriterPasswordHash, new { @class = "form-control" })
+    @Html.HiddenFor(x => x.WriterPasswordSalt, new { @class = "form-control" })
     @Html.Label("Yazar Görsel")
     @Html.TextBoxFor(x => x.WriterImage, new { @class = "form-control" })
     <br />

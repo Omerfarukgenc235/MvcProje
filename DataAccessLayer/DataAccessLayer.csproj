@@ -121,6 +121,26 @@
     <Compile Include="Migrations\202107011114358_mig_messageaddread.designer.cs">
       <DependentUpon>202107011114358_mig_messageaddread.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202107031811464_mig_adminhash.cs" />
+    <Compile Include="Migrations\202107031811464_mig_adminhash.designer.cs">
+      <DependentUpon>202107031811464_mig_adminhash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107032253003_mig_umarimolur.cs" />
+    <Compile Include="Migrations\202107032253003_mig_umarimolur.designer.cs">
+      <DependentUpon>202107032253003_mig_umarimolur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107041055338_mig_adminusernameadd.cs" />
+    <Compile Include="Migrations\202107041055338_mig_adminusernameadd.designer.cs">
+      <DependentUpon>202107041055338_mig_adminusernameadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107041056164_mig_olurmusunuzartik.cs" />
+    <Compile Include="Migrations\202107041056164_mig_olurmusunuzartik.designer.cs">
+      <DependentUpon>202107041056164_mig_olurmusunuzartik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107041610475_mig_adminstringduzeltme.cs" />
+    <Compile Include="Migrations\202107041610475_mig_adminstringduzeltme.designer.cs">
+      <DependentUpon>202107041610475_mig_adminstringduzeltme.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -170,6 +190,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202107011114358_mig_messageaddread.resx">
       <DependentUpon>202107011114358_mig_messageaddread.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107031811464_mig_adminhash.resx">
+      <DependentUpon>202107031811464_mig_adminhash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107032253003_mig_umarimolur.resx">
+      <DependentUpon>202107032253003_mig_umarimolur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107041055338_mig_adminusernameadd.resx">
+      <DependentUpon>202107041055338_mig_adminusernameadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107041056164_mig_olurmusunuzartik.resx">
+      <DependentUpon>202107041056164_mig_olurmusunuzartik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107041610475_mig_adminstringduzeltme.resx">
+      <DependentUpon>202107041610475_mig_adminstringduzeltme.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

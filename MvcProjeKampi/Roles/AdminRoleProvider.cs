@@ -1,10 +1,9 @@
 ﻿using BusinessLayer.Concrete;
-using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using System;
-using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Linq;
+using System.Text;
 using System.Web;
 using System.Web.Security;
 
@@ -12,6 +11,8 @@ namespace MvcProjeKampi.Roles
 {
     public class AdminRoleProvider : RoleProvider
     {
+        AdminManager adminManager = new AdminManager(new EfAdminDal());
+
         public override string Name => base.Name;
 
         public override string Description => base.Description;
@@ -55,9 +56,22 @@ namespace MvcProjeKampi.Roles
 
         public override string[] GetRolesForUser(string username)
         {
-            AdminManager adm = new AdminManager(new EfAdminDal());
-            var x = adm.Roless(username);
-            return new string[] { x.AdminRole };
+            using (var hmac = new System.Security.Cryptography.HMACSHA512())
+            {
+                var userNameHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(username));
+                var user = adminManager.GetAdmins();
+                foreach (var item in user)
+                {
+                    for (int i = 0; i < userNameHash.Length; i++)
+                    {
+                        if (userNameHash[i] == item.AdminUserName[i])
+                        {
+                            return new string[] { item.AdminRole };
+                        }
+                    }
+                }
+                return new string[] { };
+            }
         }
 
         public override string[] GetUsersInRole(string roleName)

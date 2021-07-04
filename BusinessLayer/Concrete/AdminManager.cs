@@ -11,46 +11,37 @@ namespace BusinessLayer.Concrete
 {
     public class AdminManager : IAdminService
     {
-        IAdminDal _admindal;
+        IAdminDal _adminDal;
 
-        public AdminManager(IAdminDal admindal)
+
+        public AdminManager(IAdminDal adminDal)
         {
-            _admindal = admindal;
+            _adminDal = adminDal;
         }
 
-        public void AdminAdd(Admin admin)
+        public void Add(Admin admin)
         {
-            throw new NotImplementedException();
+            _adminDal.Insert(admin);
         }
 
-        public void AdminDelete(Admin admin)
+        public void Delete(Admin admin)
         {
-            throw new NotImplementedException();
+            _adminDal.Delete(admin);
         }
 
-        public void AdminUpdate(Admin admin)
+        public List<Admin> GetAdmins()
         {
-            throw new NotImplementedException();
+            return _adminDal.List();
         }
 
-        public Admin GetAdmin(string username, string password)
+        public Admin GetById(int id)
         {
-            return _admindal.Get(x => x.AdminUserName == username && x.AdminPassword == password);
+            return _adminDal.Get(a => a.AdminID == id);
         }
 
-        public Admin GetByID(int id)
+        public void Update(Admin admin)
         {
-            throw new NotImplementedException();
-        }
-
-        public List<Admin> GetList()
-        {
-            return _admindal.List();
-        }
-
-        public Admin Roless(string username)
-        {
-            return _admindal.Get(x => x.AdminUserName == username);
+            _adminDal.Update(admin);
         }
     }
 }

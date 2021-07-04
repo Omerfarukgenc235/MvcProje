@@ -15,7 +15,7 @@ namespace MvcProjeKampi.Controllers
 
         public ActionResult Index()
         {
-            var adminvalues = adminmanager.GetList();
+            var adminvalues = adminmanager.GetAdmins();
             return View(adminvalues);
         }
     }
