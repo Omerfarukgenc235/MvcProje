@@ -2099,18 +2099,18 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Image\1614841896466.jpg.jpg" />
-    <Content Include="Image\1621197840452.jpg.jpg" />
-    <Content Include="Image\27654765_1403703813092690_7555912686977438786_n.jpg.jpg" />
-    <Content Include="Image\28313149_194445854658001_100353704_n.png.png" />
-    <Content Include="Image\Animals-Image-4k-Background-HD-Picture-cats-in-space-wallpaper-1920x1080.jpg.jpg" />
-    <Content Include="Image\capsule_616x353.jpg.jpg" />
-    <Content Include="Image\deneme.jpg.jpg" />
-    <Content Include="Image\IMG-20170514-WA0059.jpg.jpg" />
-    <Content Include="Image\IMG-20200702-WA0006.jpg.jpg" />
-    <Content Include="Image\Logomuz.png.png" />
-    <Content Include="Image\pp.jpeg.jpeg" />
-    <Content Include="Image\srht.png.png" />
+    <Content Include="AdminLTE-3.0.4\Image\1614841896466.jpg.jpg" />
+    <Content Include="AdminLTE-3.0.4\Image\1621197840452.jpg.jpg" />
+    <Content Include="AdminLTE-3.0.4\Image\27654765_1403703813092690_7555912686977438786_n.jpg.jpg" />
+    <Content Include="AdminLTE-3.0.4\Image\28313149_194445854658001_100353704_n.png.png" />
+    <Content Include="AdminLTE-3.0.4\Image\Animals-Image-4k-Background-HD-Picture-cats-in-space-wallpaper-1920x1080.jpg.jpg" />
+    <Content Include="AdminLTE-3.0.4\Image\capsule_616x353.jpg.jpg" />
+    <Content Include="AdminLTE-3.0.4\Image\deneme.jpg.jpg" />
+    <Content Include="AdminLTE-3.0.4\Image\IMG-20170514-WA0059.jpg.jpg" />
+    <Content Include="AdminLTE-3.0.4\Image\IMG-20200702-WA0006.jpg.jpg" />
+    <Content Include="AdminLTE-3.0.4\Image\Logomuz.png.png" />
+    <Content Include="AdminLTE-3.0.4\Image\pp.jpeg.jpeg" />
+    <Content Include="AdminLTE-3.0.4\Image\srht.png.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="AdminLTE-3.0.4\.babelrc" />
@@ -2594,6 +2594,11 @@
     <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile2.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile3.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile4.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile5.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile6.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile7.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile8.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -2689,6 +2694,7 @@
     <Content Include="Views\Yetenek\YetenekEkle.cshtml" />
     <Content Include="Views\Heading\Takvim.cshtml" />
     <Content Include="Views\Calender\Index.cshtml" />
+    <Content Include="Views\Gallery\FotoEkle.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

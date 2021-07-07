@@ -57,14 +57,17 @@
                             <div class="row">
                                 @foreach (var x in Model)
                                 {
-                                <div class="col-sm-2">
-                                    <a href="@x.ImagePath" data-toggle="lightbox" data-title="@x.ImageName" data-gallery="gallery">
-                                        <img src="@x.ImagePath" class="img-fluid mb-2" alt="white sample" />
-                                    </a>
-                                </div>
+                                    <div class="col-sm-2">
+                                        <a href="@x.ImagePath" data-toggle="lightbox" data-title="@x.ImageName" data-gallery="gallery">
+                                            <img src="@x.ImagePath" class="img-fluid mb-2" alt="white sample" />
+                                        </a>
+                                    </div>
                                 }
                             </div>
                         </div>
+                        <a href="/Gallery/FotoEkle/" class="btn btn-success ">
+                            <i class="fas fa-user"></i> Fotoğraf Ekle
+                        </a>
                     </div>
                 </div>
             </div>

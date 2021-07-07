@@ -18,6 +18,11 @@ namespace BusinessLayer.Concrete
             _imageDal = imageDal;
         }
 
+        public void Ekle(ImageFile imageFile)
+        {
+            _imageDal.Insert(imageFile);
+        }
+
         public List<ImageFile> GetList()
         {
             return _imageDal.List();

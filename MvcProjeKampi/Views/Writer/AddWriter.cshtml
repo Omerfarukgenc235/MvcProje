@@ -25,8 +25,7 @@
     @Html.HiddenFor(x => x.WriterPasswordSalt, new { @class = "form-control" })
     <br />
     @Html.Label("Yazar Görsel")
-    @*@Html.TextBoxFor(x => x.WriterImage, new { @class = "form-control" })*@
-    <input type="file" name="WriterImage" />
+    @Html.TextBoxFor(x => x.WriterImage, new { @class = "form-control" })
     @Html.ValidationMessageFor(x => x.WriterImage)
     <br />
     @Html.Label("Yazar Ünvan")
