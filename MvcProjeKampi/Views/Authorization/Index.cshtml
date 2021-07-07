@@ -20,14 +20,14 @@
         <tr>
             <th>@x.AdminID</th>
             <th>@x.AdminUserName</th>
-            <th>@x.AdminRole</th>
+            <th>@x.AdminYetkiID</th>
             <th>Aktif</th>
             <th><a href="/AdminCategory/DeleteCategory/@x.AdminID" class="btn btn-danger">Pasif Yap</a></th>
-            <th><a href="/AdminCategory/EditCategory/@x.AdminID" class="btn btn-warning">Yetkisini Değiştir</a></th>
+            <th><a href="/Authorization/AdminDuzenle/@x.AdminID" class="btn btn-warning">Yetkisini Değiştir</a></th>
             <th><a href="#" class="btn btn-danger">Başlıklar</a></th>
         </tr>
     }
 
 </table>
-<a href="/AdminCategory/AddCategory" class="btn btn-info">Yeni Admin Ekle</a>
+<a href="/Authorization/YeniAdmin" class="btn btn-info">Yeni Admin Ekle</a>
 <br />

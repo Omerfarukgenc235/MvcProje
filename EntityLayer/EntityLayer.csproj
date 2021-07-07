@@ -62,6 +62,8 @@
     <Compile Include="Concrete\ImageFile.cs" />
     <Compile Include="Concrete\Message.cs" />
     <Compile Include="Concrete\Writer.cs" />
+    <Compile Include="Concrete\Yetenek.cs" />
+    <Compile Include="Concrete\Yetki.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

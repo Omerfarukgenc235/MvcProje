@@ -91,5 +91,12 @@ namespace MvcProjeKampi.Controllers
             return RedirectToAction("Index");
         }
        
+        public ActionResult Takvim()
+        {
+            var headingvalues = hm.GetList();
+            return View(headingvalues);
+        }
+      
+
     }
 }

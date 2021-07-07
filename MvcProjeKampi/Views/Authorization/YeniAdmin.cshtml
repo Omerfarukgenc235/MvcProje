@@ -1,0 +1,26 @@
+﻿@model EntityLayer.Concrete.Dto.LoginDto
+
+@{
+    ViewBag.Title = "YeniAdmin";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>YeniAdmin</h2>
+
+@using (Html.BeginForm("YeniAdmin", "Authorization", FormMethod.Post))
+{
+<div class="form-group">
+    @Html.Label("Kullanıcı Adı")
+    @Html.TextBoxFor(x => x.AdminUserName, new { @class = "form-control" })
+    <br />
+    @Html.Label("Şifre")
+    @Html.TextBoxFor(x => x.AdminPassword, new { @class = "form-control" })
+    <br />
+    @Html.Label("Yetki")
+    @Html.DropDownListFor(x => x.AdminRole, (List<SelectListItem>)ViewBag.adminRoleValue, new { @class = "form-control" })
+
+    <br />
+    <button class="btn btn-info">Kaydet</button>
+</div>
+
+}

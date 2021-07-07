@@ -1,0 +1,27 @@
+﻿@model EntityLayer.Concrete.Yetenek
+
+@{
+    ViewBag.Title = "YetenekEkle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Yeni Yetenek Ekleme</h1>
+@using (Html.BeginForm("YetenekEkle", "Yetenek", FormMethod.Post))
+{
+<div class="form-group">
+    @Html.Label("Yetenek Adı")
+    @Html.TextBoxFor(x => x.YetenekAdi, new { @class = "form-control" })
+    <br />
+    <br />
+    @Html.Label("Yüzde")
+    @Html.TextAreaFor(x => x.Yetenekyuzde, new { @class = "form-control" })
+
+    <br />
+    @Html.Label("Durum")
+    @Html.TextAreaFor(x => x.YetenekDurum, new { @class = "form-control" })
+
+    <br />
+    <button class="btn btn-success">Ekle</button>
+</div>
+
+}

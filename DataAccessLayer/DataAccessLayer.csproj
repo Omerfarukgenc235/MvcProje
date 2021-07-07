@@ -61,6 +61,8 @@
     <Compile Include="Abstract\IMessageDal.cs" />
     <Compile Include="Abstract\IRepository.cs" />
     <Compile Include="Abstract\IWriterDal.cs" />
+    <Compile Include="Abstract\IYetenekDal.cs" />
+    <Compile Include="Abstract\IYetkiDal.cs" />
     <Compile Include="Concrete\Context.cs" />
     <Compile Include="Concrete\Repositories\CategoryRepository.cs" />
     <Compile Include="Concrete\Repositories\GenericRepository.cs" />
@@ -72,6 +74,8 @@
     <Compile Include="EntityFramework\EfHeadingDal.cs" />
     <Compile Include="EntityFramework\EfMessageDal.cs" />
     <Compile Include="EntityFramework\EfWriterDal.cs" />
+    <Compile Include="EntityFramework\EfYetenekDal.cs" />
+    <Compile Include="EntityFramework\EfYetkiDal.cs" />
     <Compile Include="EntityFramework\ImageFileDal.cs" />
     <Compile Include="Migrations\202104301339266_mig1.cs" />
     <Compile Include="Migrations\202104301339266_mig1.designer.cs">
@@ -141,6 +145,18 @@
     <Compile Include="Migrations\202107041610475_mig_adminstringduzeltme.designer.cs">
       <DependentUpon>202107041610475_mig_adminstringduzeltme.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202107051957575_mig_yetkilendirmeeklendi.cs" />
+    <Compile Include="Migrations\202107051957575_mig_yetkilendirmeeklendi.designer.cs">
+      <DependentUpon>202107051957575_mig_yetkilendirmeeklendi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107061045425_mig_soruncozuldu.cs" />
+    <Compile Include="Migrations\202107061045425_mig_soruncozuldu.designer.cs">
+      <DependentUpon>202107061045425_mig_soruncozuldu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107062023082_mig_yetenekadd.cs" />
+    <Compile Include="Migrations\202107062023082_mig_yetenekadd.designer.cs">
+      <DependentUpon>202107062023082_mig_yetenekadd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -205,6 +221,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202107041610475_mig_adminstringduzeltme.resx">
       <DependentUpon>202107041610475_mig_adminstringduzeltme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107051957575_mig_yetkilendirmeeklendi.resx">
+      <DependentUpon>202107051957575_mig_yetkilendirmeeklendi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107061045425_mig_soruncozuldu.resx">
+      <DependentUpon>202107061045425_mig_soruncozuldu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107062023082_mig_yetenekadd.resx">
+      <DependentUpon>202107062023082_mig_yetenekadd.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

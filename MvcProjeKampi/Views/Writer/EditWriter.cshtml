@@ -6,7 +6,7 @@
 
 <h2>EditWriter</h2>
 
-@using (Html.BeginForm("EditWriter", "Writer", FormMethod.Post))
+@using (Html.BeginForm("EditWriter", "Writer", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
 <div class="form-group">
 
@@ -28,14 +28,14 @@
     @Html.ValidationMessageFor(x => x.WriterMail)
 
     <br />
-    @Html.Label("Yazar Şifresi")
-    @Html.TextBoxFor(x => x.WriterPassword, new { @class = "form-control" })
-    @Html.ValidationMessageFor(x => x.WriterPassword, "", new { @class = "text-danger" })
-
-    <br />
+    @Html.HiddenFor(x => x.WriterPasswordHash, new { @class = "form-control" })
+    @Html.HiddenFor(x => x.WriterPasswordSalt, new { @class = "form-control" })
     @Html.Label("Yazar Görsel")
-    @Html.TextBoxFor(x => x.WriterImage, new { @class = "form-control" })
+    @*@Html.TextBoxFor(x => x.WriterImage, new { @class = "form-control" })*@
+    <input type="file" name="WriterImage" />
     @Html.ValidationMessageFor(x => x.WriterImage)
+
+
 
     <br />
     @Html.Label("Yazar Ünvan")

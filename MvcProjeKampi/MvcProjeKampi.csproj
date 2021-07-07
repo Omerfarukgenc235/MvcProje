@@ -141,6 +141,7 @@
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminCategoryController.cs" />
     <Compile Include="Controllers\AuthorizationController.cs" />
+    <Compile Include="Controllers\CallenderController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\ChartController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
@@ -159,9 +160,11 @@
     <Compile Include="Controllers\WriterPanelContentController.cs" />
     <Compile Include="Controllers\WriterPanelController.cs" />
     <Compile Include="Controllers\WriterPanelMessageController.cs" />
+    <Compile Include="Controllers\YetenekController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Callender.cs" />
     <Compile Include="Models\CategoryClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Roles\AdminRoleProvider.cs" />
@@ -2096,6 +2099,18 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Image\1614841896466.jpg.jpg" />
+    <Content Include="Image\1621197840452.jpg.jpg" />
+    <Content Include="Image\27654765_1403703813092690_7555912686977438786_n.jpg.jpg" />
+    <Content Include="Image\28313149_194445854658001_100353704_n.png.png" />
+    <Content Include="Image\Animals-Image-4k-Background-HD-Picture-cats-in-space-wallpaper-1920x1080.jpg.jpg" />
+    <Content Include="Image\capsule_616x353.jpg.jpg" />
+    <Content Include="Image\deneme.jpg.jpg" />
+    <Content Include="Image\IMG-20170514-WA0059.jpg.jpg" />
+    <Content Include="Image\IMG-20200702-WA0006.jpg.jpg" />
+    <Content Include="Image\Logomuz.png.png" />
+    <Content Include="Image\pp.jpeg.jpeg" />
+    <Content Include="Image\srht.png.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="AdminLTE-3.0.4\.babelrc" />
@@ -2575,6 +2590,10 @@
     <Content Include="web\js\jquery.circlechart.js" />
     <Content Include="web\w3layouts-License.txt" />
     <Content Include="Yetenek kartım.png" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile2.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile3.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -2663,9 +2682,17 @@
     <Content Include="Views\Test\Kendim.cshtml" />
     <Content Include="Views\Register\Index.cshtml" />
     <Content Include="Views\Register\WriterRegister.cshtml" />
+    <Content Include="Views\Authorization\YeniAdmin.cshtml" />
+    <Content Include="Views\Authorization\AdminDuzenle.cshtml" />
+    <Content Include="Views\Yetenek\Index.cshtml" />
+    <Content Include="Views\Yetenek\YetenekListe.cshtml" />
+    <Content Include="Views\Yetenek\YetenekEkle.cshtml" />
+    <Content Include="Views\Heading\Takvim.cshtml" />
+    <Content Include="Views\Calender\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Callender\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

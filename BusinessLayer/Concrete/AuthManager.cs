@@ -47,10 +47,12 @@ namespace BusinessLayer.Concrete
                 AdminUserName = userNameHash,
                 AdminPasswordHash = passwordHash,
                 AdminPasswordSalt = passwordSalt,
-                AdminRole = "A"
+                AdminYetkiID = 1
             };
             _adminService.Add(admin);
         }
+
+     
 
         public bool WriterLogin(WriterLoginDto writerLoginDto)
         {

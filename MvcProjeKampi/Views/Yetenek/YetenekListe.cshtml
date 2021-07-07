@@ -1,0 +1,37 @@
+﻿@using EntityLayer.Concrete
+@model List<Yetenek>
+
+@{
+    ViewBag.Title = "YetenekListe";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+
+
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Yetenek Adı</th>
+        <th>Yüzdesi</th>
+        <th>Durumu</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <th>@x.YetenekID</th>
+            <th>@x.YetenekAdi</th>
+            <th>@x.Yetenekyuzde</th>
+            <th>@x.YetenekDurum</th>
+            <th><a href="/AdminCategory/DeleteCategory/@x.YetenekID" class="btn btn-danger">Sil</a></th>
+            <th><a href="/AdminCategory/EditCategory/@x.YetenekID" class="btn btn-warning">Güncelle</a></th>
+            <th><a href="#" class="btn btn-danger">Başlıklar</a></th>
+        </tr>
+    }
+
+</table>
+<a href="/Yetenek/YetenekEkle" class="btn btn-info">Yeni Yetenek Ekle</a>
+<br />
+<br />
